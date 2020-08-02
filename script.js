@@ -1,3 +1,17 @@
+
+
+// Grab element and set 5s delay between fadeout followed by adding d-none class after .1s delay
+$('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 ).addClass( d-none );
+
+$('#socialMediaBarID').delay( 4000 );
+$('#navBarID').delay( 4000 );
+
+
+
+
+
+
+
 // function animate(element, animation) {
 //     $(element).addClass('animated '+animation);
 //     var wait = setTimeout(function() {
@@ -21,14 +35,6 @@
 // }
 
 // $('#openingPageDivID').hide( 10000 );
-
-// Grab element and set 5s delay between fadeout followed by adding d-none class after .1s delay
-$('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 ).addClass( d-none );
-
-$('#socialMediaBarID').delay( 4000 );
-$('#navBarID').delay( 4000 );
-
-
 
 // function professionalSummary(evt, roleName) {
 //     var i, tabContent, tabLinks;

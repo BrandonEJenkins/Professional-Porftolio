@@ -14,6 +14,7 @@ ul li:before {
 } */
 
 a {
+    /* color: #E3C036; */
     color: #efbb35;
     text-decoration: none;
     background-color: transparent;
@@ -30,6 +31,10 @@ a:hover {
 
 .monospace {
     font-family: 'Andale Mono', monospace;
+}
+
+.workExperienceListItems {
+    font-size: 18px;
 }
 
 .siteBtn {
@@ -119,13 +124,72 @@ a:hover {
 * VERTICAL TABS STYLES
  *************************/
 .verticalPillNav {
-    margin-left: 60px;
+    margin-left: 40px;
     padding: 20px 70px 70px 70px;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
     background-color: #efbb35;
+}
+
+.myProjectLinkColor a {
+    color: #EFBB35;
+}
+
+.portfolioContainer {
+    background: transparent !important;
+}
+
+
+/*
+
+PORTFOLIO CARDS
+
+*/
+
+.portfolioCard {
+    border: none;
+    
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.portfolioCard:hover {
+    transform: scale(1.2);
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+/* Create container to hold portfolio cards */
+.imgContainer {
+    width: 50px;
+    height: 60px;
+
+}
+
+/* Resize images */
+.imgContainer img {
+    width: 100%;
+    height: auto;
+}
+
+/* Position image inline center with text */
+.imgAlign {
+    vertical-align: middle;
+    border-radius: 1px;
+
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.imgAlign:hover {
+    transform: scale(5.0);
+    transform-origin: bottom left;
+
+    transition: 0.4s;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 /* .fa-square {
