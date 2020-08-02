@@ -36,10 +36,10 @@
 <!-- The social media icon bar -->
 <!-- <div id="socialMediaBar" class="icon-bar"> -->
 <div id="socialMediaBarID" class="animate__animated animate__fadeIn animate__delay-5s icon-bar">
-    <a href="https://www.facebook.com/brandon.jenkins.14289210/" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="https://www.linkedin.com/in/brandon-e-jenkins/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-    <a href="https://www.youtube.com/channel/UC08GUzzdqBbnKzniaZvXDIw?view_as=subscriber" class="youtube"><i class="fa fa-youtube"></i></a>
-    <a href="https://github.com/BrandonEJenkins" class="github"><i class="fa fa-github"></i></a>
+    <a href="https://www.facebook.com/brandon.jenkins.14289210/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/brandon-e-jenkins/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/channel/UC08GUzzdqBbnKzniaZvXDIw?view_as=subscriber" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://github.com/BrandonEJenkins" class="github" target="_blank"><i class="fa fa-github"></i></a>
 </div>
 
 <nav id="navBarID" class="animate__animated animate__fadeIn animate__delay-5s navbar navbar-expand-lg navbar-light bg-light">
@@ -69,34 +69,102 @@
     </div><!-- row1 -->
     <div id="aboutMeBtnID" class="row mx-3 mt-3 mb-3 p-5 bg-white">
             <div class="col-sm-6">
-                <button type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace">View Projects</button>
+                <button type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn">View Projects</button>
             </div>
             <div class="col-sm-6">
-                <button type="button" class="btn btn-outline-secondary btn-xl monospace">Contact Me</button>
+                <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn">Contact Me</button>
             </div>
     </div>
 </div><!-- #aboutMeContainer -->
+<br/><!-- CONVERT TO MARGIN OR PATTEN PROPERTY IN CSS -->
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<div class="container">
+
+<div id="TechnicalSkillsContainerID" class="container-fluid mt-4 mb-3 p-5 bg-white TechnicalSkillsContainer">
     <div class="row">
         <div class="col">
-            <p>Test</p>
+            <div class="spacer">
+                <h1 id="techSkillsID" class="animate__animated animate__fadeInUp animate__delay-5s display-4 mb-5">Technical Skills.</h1>
+                <h3 class="animate__animated animate__fadeInUp animate__delay-5s mb-5">Professional Summary</h3>
+                <p class="animate__animated animate__fadeInUp animate__delay-5s mb-3">Dedicated professional looking to grow and create with a dynamic company in the Tech sector!</p>
+                <p class="animate__animated animate__fadeInUp animate__delay-5s">Skilled at business development &amp; coordination of large capital projects.  Proficient at management of highly technical programs involving multifunctional teams.  Adept in equipment design / selection and advanced performance data analytics.</p>
+                <p class="animate__animated animate__fadeInUp animate__delay-5s">I am looking forward to continuing my journey as a creator of value-added solutions in the Technology industry!</p>
+            </div>
         </div>
+    </div><!-- row1 -->
+    <div id="TechnicalSkillsBtnID" class="row mx-3 mt-3 mb-3 p-5 bg-white">
+            <div class="col">
+                <button type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn">Work Experience</button>
+            </div>
     </div>
-</div>
+</div><!-- #TechnicalSkillsContainer -->
+
+<div class="verticalPillNav">
+    <div class="row">
+        <div class="col-4">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active verticalPillBtn" id="v-pills-webDeveloper-tab" data-toggle="pill" href="#v-pills-webDeveloper" role="tab" aria-controls="v-pills-webDeveloper" aria-selected="true">Web Development</a>
+                <a class="nav-link verticalPillBtn" id="v-pills-projectManagement-tab" data-toggle="pill" href="#v-pills-projectManagement" role="tab" aria-controls="v-pills-projectManagement" aria-selected="false">Project Management</a>
+                <a class="nav-link verticalPillBtn" id="v-pills-businessDevelopment-tab" data-toggle="pill" href="#v-pills-businessDevelopment" role="tab" aria-controls="v-pills-businessDevelopment" aria-selected="false">Business Development</a>
+                <a class="nav-link verticalPillBtn" id="v-pills-engineering-tab" data-toggle="pill" href="#v-pills-engineering" role="tab" aria-controls="v-pills-engineering" aria-selected="false">Engineering Experience</a>
+            </div>
+        </div><!-- col-3 -->
+        <div class="col-8 pr-5">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-webDeveloper" role="tabpanel" aria-labelledby="v-pills-webDeveloper-tab">
+                    <h5>Full-Stack Web Developer</h5>
+                    <h6>The Coding Boot Camp at UT Austin</h6>
+                    <ul>
+                        <li>Completed rigorous 24-week program focusing on front and back end technologies</li>
+                        <li>Designed and developed browser based applications using technologies including JavaScript, CSS, Node.js</li>
+                        <li>Developed dynamic server side applications using Node.js to create and consume RESTful APIs</li>
+                        <li>Employed Git branching methods to create collaborative projects to be deployed on GitHub and Heroku</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="v-pills-projectManagement" role="tabpanel" aria-labelledby="v-pills-projectManagement-tab">
+                    <h5>Asset Optimization</h5>
+                    <h6>BHP Billiton</h6>
+                    <ul>
+                        <li>Managed onsite contractor personnel and activities during drill-well operations; worked with 3rd-party vendors to mitigate health and safety risks</li>
+                        <li>Developed solutions for value enhancing projects to maximize production across Shale assets with Joint Venture partners</li>
+                        <li>Led multi-disciplinary project to characterize value of core company asset, develop a physics-based well production forecast
+                            methodology, and to improve the accuracy of the estimated impact of production on corporate reserves</li>
+                        <li>Developed well operations query tool for engineering team to simplify planning work and generate visual representations of key data resulting in a reduction in the time spent gathering reports for offset reviews</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="v-pills-businessDevelopment" role="tabpanel" aria-labelledby="v-pills-businessDevelopment-tab">
+                    <h5>Asset Optimization &amp; Reservoir Engineering</h5>
+                    <h6>BHP Billiton</h6>
+                    <ul>
+                        <li>Coordinated multi-disciplinary teams to propose, evaluate, and prioritize the development of wells into an executable schedule</li>
+                        <li>Developed solutions for value enhancing projects to maximize production across Shale assets with Joint Venture partners</li>
+                        <li>Led multi-disciplinary project to characterize value of core company asset, develop a physics-based well production forecast
+                            methodology, and to improve the accuracy of the estimated impact of production on corporate reserves</li>
+                        <li>Developed well operations query tool for engineering team to simplify planning work and generate visual representations of key data resulting in a reduction in the time spent gathering reports for offset reviews</li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="v-pills-engineering" role="tabpanel" aria-labelledby="v-pills-engineering-tab">
+                    <h5>Drilling Planning &amp; Operations Engineering</h5>
+                    <h6>ExxonMobil</h6>
+                    <ul>
+                        <li>Coordinated multi-disciplinary teams to propose, evaluate, and prioritize the development of wells into an executable schedule</li>
+                        <li>Developed solutions for value enhancing projects to maximize production across Shale assets with Joint Venture partners</li>
+                        <li>Led multi-disciplinary project to characterize value of core company asset, develop a physics-based well production forecast
+                            methodology, and to improve the accuracy of the estimated impact of production on corporate reserves</li>
+                        <li>Developed well operations query tool for engineering team to simplify planning work and generate visual representations of key data resulting in a reduction in the time spent gathering reports for offset reviews</li>
+                    </ul>
+                </div>
+            </div><!-- #v-pills-tabContent -->
+        </div><!-- col-9 -->
+    </div><!-- row -->
+</div><!-- .verticalPillNav -->
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
     <!-- jQuery minified -->

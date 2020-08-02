@@ -1,18 +1,44 @@
-p {
-    font-size: 18px;
+p, li {
+    font-size: 20px;
+}
+
+/* ul {
+    list-style-type: none;
+}
+
+ul li:before {
+    font-family: 'FontAwesome';
+    content: '\f067';
+    margin: 0 0.2em 0 -1.2em;
+    color: #efbb35;
+} */
+
+a {
+    color: #efbb35;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #333;
+}
+
+.verticalPillBtn {
+    font-size: 20px;
+    font-family: 'Andale Mono', monospace;
 }
 
 .monospace {
     font-family: 'Andale Mono', monospace;
 }
 
-.btn-xl {
+.siteBtn {
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 3px;
 }
 
-.btn-xl:hover {
+.siteBtn:hover {
     font-family: monospace;
     background-color: transparent;
     color: #EFBB35;
@@ -68,6 +94,15 @@ p {
     margin: 40px 80px;
 }
 
+#openingPageDivID {
+    margin-top: 6rem !important;
+}
+
+#aboutMeContainerID {
+    margin-top: 7rem !important;
+    margin-bottom: 9rem !important;
+}
+
 /* .spacerButton {
     margin: 40px 80px;
 } */
@@ -78,4 +113,38 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+
+/*****************************************
+* VERTICAL TABS STYLES
+ *************************/
+.verticalPillNav {
+    margin-left: 60px;
+    padding: 20px 70px 70px 70px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #efbb35;
+}
+
+/* .fa-square {
+    color: #333;
+} */
+
+/* @media (min-width: 576px) */
+/* .verticalPillNav {
+    padding: 1.5rem;
+    margin: 0;
+    border-width: .2rem;;
+}
+
+.verticalPillNav {
+    position: relative;
+    margin: 1rem -15px 0;
+    border: solid #f7f7f9;
+} */
+
+/* *, ::after, ::before {
+    box-sizing: border-box;
 } */

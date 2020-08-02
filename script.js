@@ -28,6 +28,26 @@ $('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 ).addClass( d-no
 $('#socialMediaBarID').delay( 4000 );
 $('#navBarID').delay( 4000 );
 
+
+
+// function professionalSummary(evt, roleName) {
+//     var i, tabContent, tabLinks;
+//     tabContent = document.getElementsByClassName("tabContent");
+//         for (i = 0; i < tabContent.length; i++) {
+//         tabContent[i].style.display = "none";
+//     }
+//     tabLinks = document.getElementsByClassName("tabLinks");
+//         for (i = 0; i < tabLinks.length; i++) {
+//             tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+//         }
+//         document.getElementById(roleName).style.display = "block";
+//         evt.currentTarget.className += " active";
+// }
+
+// // Get the element with id="defaultOpen" and click on it
+// document.getElementById("defaultOpen").click();
+
+
 // function revealSocialMedia() {
 //     if(document.getElementById('socialMediaBar')){
 //         var socialMediaBar = $('#socialMediaBar');
