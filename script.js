@@ -16,20 +16,17 @@ $(document).ready(function () {
         e.preventDefault();
         console.log('home icon button clicked');
 
-        
+        $('div:not(#workExperienceBtn):not(.profSumm1):not(#verticalPillContainerID))').removeClass('d-none');
     }
-    
+
 
     function handleWorkExperienceBtnClick(e) {
         e.preventDefault();
         console.log('work experience button clicked')
-        // workExperienceBtn = $(this).parent().parent().children();
+
         $('#workExperienceBtn').addClass('d-none');
-
         $('.profSumm1').addClass('d-none');
-
         $('#verticalPillContainerID').removeClass('d-none');
-        // $('#verticalPillContainerID').appendTo('#technicalSkillsContainerID');
     }
 
 })
@@ -44,7 +41,7 @@ $(document).ready(function () {
         $('#aboutMeContainerID').addClass('d-none');
         $('#technicalSkillsContainerID').addClass('d-none');
         $('#verticalPillContainerID').addClass('d-none');
-
+        $('#homeIconBtnID').addClass('d-none');
     }
 
 
