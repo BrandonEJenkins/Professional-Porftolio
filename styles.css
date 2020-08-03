@@ -22,6 +22,10 @@ a {
     transition: all .2s ease-in-out;
 }
 
+/* .display-4 {
+    color: #EFBB35;
+} */
+
 .noUnderline {
     text-decoration: none !important;
 }
@@ -69,6 +73,27 @@ a:hover {
     color: #EFBB35;
     border-color: #EFBB35;
 }
+
+
+.portfolioClickHereBtn:hover {
+    border-color: #EFBB35;
+    color: white;
+    background-color: #EFBB35;
+}
+
+.fa-home {
+    /* opacity: 0.25; */
+    
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.fa-home:hover {
+    transform: scale(1.5);
+    transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
 
 
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
@@ -125,12 +150,12 @@ a:hover {
 
 #aboutMeContainerID {
     margin-top: 7rem !important;
-    margin-bottom: 9rem !important;
+    margin-bottom: 4rem !important;
 }
 
-#technicalSkillsContainerID {
+/* #technicalSkillsContainerID {
     margin-bottom: 9rem !important;
-}
+} */
 
 /* .spacerButton {
     margin: 40px 80px;

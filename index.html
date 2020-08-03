@@ -56,19 +56,21 @@
         </div>
     </nav>
 
-    <div id="aboutMeContainerID" class="container mt-4 mb-3 p-5 bg-white aboutMeContainer">
+    <a name="topAnchor"></a><!-- anchor tag returning user to top of document -->
+
+    <div id="aboutMeContainerID" class="container mt-4 p-5 bg-white aboutMeContainer">
         <div class="row">
             <div class="col">
                 <div class="spacer">
-                    <h1 class="animate__animated animate__fadeInUp animate__delay-5s display-4 mb-5">About Me.</h1>
+                    <h1 class="animate__animated animate__fadeInUp animate__delay-5s display-3 mb-5">About Me.</h1>
                     <p class="animate__animated animate__fadeInUp animate__delay-5s mb-3">Hello there!  I'm Brandon Jenkins, a Full-Stack Web Developer based in the DC, Maryland, Virginia area, who loves to create highly interactive and dynamic web applications!</p>
                     <p class="animate__animated animate__fadeInUp animate__delay-5s">After spending 10 years working as a Petroleum Engineer, I decided it's time for a change.  I made the deliberate decision to hit reset on my career, and transition to an exciting sector that offers its engineers technical depth and versatility.  </p>
-                </div>
+                </div><!-- .spacer -->
             </div>
-        </div><!-- row1 -->
-        <div id="aboutMeBtnID" class="row mx-3 mt-3 mb-3 p-5 bg-white">
+        </div><!-- row -->
+        <div id="aboutMeBtnID" class="row mx-3 mt-3 mb-1 p-5 bg-white">
                 <div class="col-sm-6">
-                    <button type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">View Projects</button>
+                    <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">View Projects</button>
                 </div>
                 <div class="col-sm-6">
                     <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Contact Me</button>
@@ -82,24 +84,24 @@
         <div class="row">
             <div class="col">
                 <div class="spacer">
-                    <h1 id="techSkillsHeadingID" class="animate__animated animate__fadeInUp animate__delay-5s display-4 mb-5">Technical Skills.</h1>
+                    <h1 id="techSkillsHeadingID" class="animate__animated animate__fadeInUp animate__delay-5s display-3 mb-5">Technical Skills.</h1>
                     <h3 class="animate__animated animate__fadeInUp animate__delay-5s mb-5">Professional Summary</h3>
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s mb-3">Dedicated professional looking to grow and create innovative solutions with a dynamic company in the Tech sector!</p>
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s">Skilled at business development &amp; coordination of large capital projects.  Proficient at management of highly technical programs involving multifunctional teams.  Adept in equipment design / selection and advanced performance data analytics.</p>
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s">I am looking forward to continuing my journey as a creator of value-added solutions in the Technology industry!</p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-5s mb-3 profSumm1">Dedicated professional looking to grow and create innovative solutions with a dynamic company in the Tech sector!</p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-5s profSumm1">Skilled at business development &amp; coordination of large capital projects.  Proficient at management of highly technical programs involving multifunctional teams.  Adept in equipment design / selection and advanced performance data analytics.</p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-5s profSumm1">I am looking forward to continuing my journey as a creator of value-added solutions in the Technology industry!</p>
                 </div>
             </div>
         </div><!-- row1 -->
-        <div id="technicalSkillsBtnID" class="row mx-3 mt-3 mb-3 p-5 bg-white">
+        <div id="workExperienceBtn" class="row mx-3 mt-3 mb-3 p-5 bg-white">
                 <div class="col">
-                    <button type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Work Experience</button>
+                    <button  id="technicalSkillsBtnID" type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Work Experience</button>
                 </div>
         </div>
     </div><!-- #TechnicalSkillsContainer -->
 
 
-    <div class="container">
-        <div class="verticalPillNav animate__animated animate__fadeInUp animate__delay-5s">
+    <div id="verticalPillContainerID" class="container d-none">
+        <div class="verticalPillNav animate__animated animate__fadeInUp">
             <div class="row">
 
                     <div class="col-4">
@@ -159,22 +161,32 @@
                     </div><!-- col-8 -->
 
             </div><!-- row -->
+
+            <div id="verticalPillViewProjContactMeBtns" class="row mx-3 mt-3 mb-3 p-5 bg-white">
+                <div class="col-sm-6">
+                    <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-3s">View Projects</button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-3s">Contact Me</button>
+                </div>
+            </div><!-- row -->
+
         </div><!-- .verticalPillNav -->
     </div><!-- .container -->
 
-    <div id="portfolioContainerID" class="container mt-4 mb-3 p-5 bg-white portfolioContainer">
+    <div id="portfolioContainerID" class="container mt-4 mb-3 p-5 bg-white portfolioContainer d-none">
         <div class="row">
             <div class="col">
                 <div class="spacer">
-                    <h1 id="portfolioHeadingID" class="animate__animated animate__fadeInUp animate__delay-5s display-4 mb-5">Portfolio.</h1>
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s mb-1">Here are a few projects I've worked on.  Want to see more?  <a href="#" class="noUnderline">Let's connect!</a></p><br/>
+                    <h1 id="portfolioHeadingID" class="animate__animated animate__fadeInUp display-3 mb-5">Portfolio.</h1>
+                    <p class="animate__animated animate__fadeInUp mb-1">Here are a few projects I've worked on.  Want to see more?  <a href="#" class="noUnderline">Let's connect!</a></p><br/>
                 </div><!-- .spacer -->
             </div>
         </div><!-- row -->
     </div><!-- container -->
 
 
-    <div class="container animate__animated animate__fadeInUp animate__delay-5s">
+    <div id="portfolioCardsContainerID" class="container animate__animated animate__fadeInUp animate__delay-1s d-none">
         <div class="row justify-content-center">
             <!-- INSERT DIV WITH CLASS .SPACER??? -->
 
@@ -188,12 +200,12 @@
                             <span class="badge badge-info mb-1 shadow-sm">Node.js</span>
                             <span class="badge badge-info mb-1 shadow-sm">Express.js</span>
                             <p class="card-text">
-                                An Express.js and Node.js <a href="https://afternoon-crag-91916.herokuapp.com/" class="noUnderline" target="_blank">note taking command line application</a> used to write, save, and delete notes.
+                                An Express.js &amp; Node.js <a href="https://afternoon-crag-91916.herokuapp.com/" class="noUnderline" target="_blank">note taking CLI application</a> used to write, save, and delete notes.
                                 <div class="imgContainer">
                                     <img class="imgAlign" src="./assets/Images/Note Taker App.png" alt="Image of Express and Node JS note taker application">
                                 </div>
                             </p>
-                            <a href="https://afternoon-crag-91916.herokuapp.com/" class="btn shadow btn-outline-secondary" target="_blank">Click Here!</a>
+                            <a href="https://afternoon-crag-91916.herokuapp.com/" class="btn shadow border-0 portfolioClickHereBtn" target="_blank">Click Here!</a>
                         </div>
                     </div>
                 </div><!-- col -->
@@ -207,12 +219,12 @@
                             <span class="badge badge-info mb-1 shadow-sm">Express.js</span>
                             <span class="badge badge-info mb-1 shadow-sm">MySQL</span>
                             <p class="card-text">
-                                A server side app that <a href="https://drive.google.com/file/d/1q68VdVBszt0NrkFm5BUARks9aYxDouHC/view" class="noUnderline" target="_blank">simulates a cms</a> allowing users to add, view, remove employees.
+                                A <a href="https://drive.google.com/file/d/1q68VdVBszt0NrkFm5BUARks9aYxDouHC/view" class="noUnderline" target="_blank">server side app</a> that simulates a cms allowing users to add, view, remove employees.
                                 <div class="imgContainer">
-                                    <img class="imgAlign" src="./assets/Images/MySQL_Emp_Mngr_App.png" alt="Image of JavaScript weather forecast app">
+                                    <img class="imgAlign" src="./assets/Images/MySQL_Emp_Mngr_App.png" alt="Image of employee manager application">
                                 </div>
                             </p>
-                            <a href="https://drive.google.com/file/d/1q68VdVBszt0NrkFm5BUARks9aYxDouHC/view" class="btn shadow btn-outline-secondary" target="_blank">Click Here!</a>
+                            <a href="https://drive.google.com/file/d/1q68VdVBszt0NrkFm5BUARks9aYxDouHC/view" class="btn shadow border-0 portfolioClickHereBtn" target="_blank">Click Here!</a>
                         </div>
                     </div>
                 </div><!-- col -->
@@ -220,18 +232,18 @@
                 <div class="col-sm-4 py-2">
                     <div class="card h-100  shadow portfolioCard">
                         <div class="card-body">
-                            <h3 class="card-title">Brewery Finder App</h3>
-                            <span class="badge badge-info mb-1 shadow-sm">HTML</span>
-                            <span class="badge badge-info mb-1 shadow-sm">CSS</span>
+                            <h3 class="card-title">Good ReadMe Generator</h3>
                             <span class="badge badge-info mb-1 shadow-sm">JS</span>
-                            <span class="badge badge-info mb-1 shadow-sm">API</span>
+                            <span class="badge badge-info mb-1 shadow-sm">Node.js</span>
+                            <span class="badge badge-info mb-1 shadow-sm">Express.js</span>
+                            <span class="badge badge-info mb-1 shadow-sm">MySQL</span>
                             <p class="card-text">
-                                An app that links consumers with their favorite breweries in this <a href="https://brandonejenkins.github.io/Beer-Finder/"  class="noUnderline" target="_blank">RESTful API project!</a>
+                                A <a href="https://drive.google.com/file/d/1SSfzo-ZMTiYfcOxnyIisY2mxz4WfVZKn/view"  class="noUnderline" target="_blank">command line application</a> using Node.js and ES6+ to create a ReadMe file based on user input.
                                 <div class="imgContainer">
-                                    <img class="imgAlign" src="./assets/Images/BeerFinder.png" alt="Image of JavaScript brewery finder app">
+                                    <img class="imgAlign" src="./assets/Images/Good-ReadMe-Generator-App.png" alt="Image of good readme generator app">
                                 </div>
                             </p>
-                            <a href="https://brandonejenkins.github.io/Beer-Finder/" class="btn shadow btn-outline-secondary" target="_blank">Click Here!</a>
+                            <a href="https://drive.google.com/file/d/1SSfzo-ZMTiYfcOxnyIisY2mxz4WfVZKn/view" class="btn shadow border-0 portfolioClickHereBtn" target="_blank">Click Here!</a>
                         </div>
                     </div>
                 </div><!-- col -->
@@ -249,7 +261,7 @@
                                     <img class="imgAlign" src="./assets/Images/passwordGen.png" alt="Image of JavaScript password generator project">
                                 </div>
                             </p>
-                            <a href="https://brandonejenkins.github.io/BJ-bc-Homework-3/" class="btn shadow btn-outline-secondary" target="_blank">Click Here!</a>
+                            <a href="https://brandonejenkins.github.io/BJ-bc-Homework-3/" class="btn shadow border-0 portfolioClickHereBtn" target="_blank">Click Here!</a>
                         </div>
                     </div>
                 </div><!-- col -->
@@ -268,7 +280,7 @@
                                     <img class="imgAlign" src="./assets/Images/WeatherDashboard.png" alt="Image of JavaScript weather forecast app">
                                 </div>
                             </p>
-                            <a href="https://brandonejenkins.github.io/BJ-bc-Homework-6/" class="btn shadow btn-outline-secondary" target="_blank">Click Here!</a>
+                            <a href="https://brandonejenkins.github.io/BJ-bc-Homework-6/" class="btn shadow border-0 portfolioClickHereBtn" target="_blank">Click Here!</a>
                         </div>
                     </div>
                 </div><!-- col -->
@@ -287,22 +299,26 @@
                                     <img class="imgAlign" src="./assets/Images/BeerFinder.png" alt="Image of JavaScript brewery finder app">
                                 </div>
                             </p>
-                            <a href="https://brandonejenkins.github.io/Beer-Finder/" class="btn shadow btn-outline-secondary" target="_blank">Click Here!</a>
+                            <a href="https://brandonejenkins.github.io/Beer-Finder/" class="btn shadow border-0 portfolioClickHereBtn" target="_blank">Click Here!</a>
                         </div>
                     </div>
                 </div><!-- col -->
 
             <!-- CLOSE DIV WITH CLASS .SPACER??? -->
         </div><!-- row -->
+        <br/><br/>
+        <a href="#topAnchor"><i id="homeIconBtnID" class="fa fa-home fa-2x" aria-hidden="true"></i></a>
+
     </div><!-- container -->
 
 
     <br/>
     <br/>
     <br/>
-    <br/>
-    <br/>
-    <br/>
+
+    <!-- <nav class="navbar bottom navbar-light bg-light animate__animated animate__fadeInUp animate__delay-5s">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+    </nav> -->
 
 
     <!-- jQuery minified -->

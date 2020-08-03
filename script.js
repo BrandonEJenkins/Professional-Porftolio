@@ -1,10 +1,53 @@
+$(document).ready(function () {
+
+    var workExperienceBtn;
+    // Grab element and set 5s delay between fadeout followed by adding d-none class after .1s delay
+    $('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 );
+    // $('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 ).addClass( 'd-none' );
+    
+    $('#socialMediaBarID').delay( 4000 );
+    $('#navBarID').delay( 4000 );
+
+    $(document).on("click","button#technicalSkillsBtnID", handleWorkExperienceBtnClick);
+    $(document).on("click","button#viewProjectsBtnID", handleViewProjectsBtnClick);
+    $(document).on("click","button#homeIconBtnID", handleHomeIconBtnClick);
+
+    function handleHomeIconBtnClick(e) {
+        e.preventDefault();
+        console.log('home icon button clicked');
+
+        
+    }
+    
+
+    function handleWorkExperienceBtnClick(e) {
+        e.preventDefault();
+        console.log('work experience button clicked')
+        // workExperienceBtn = $(this).parent().parent().children();
+        $('#workExperienceBtn').addClass('d-none');
+
+        $('.profSumm1').addClass('d-none');
+
+        $('#verticalPillContainerID').removeClass('d-none');
+        // $('#verticalPillContainerID').appendTo('#technicalSkillsContainerID');
+    }
+
+})
+
+    function handleViewProjectsBtnClick(e) {
+        e.preventDefault();
+        console.log('view projects button clicked');
+
+        $('#portfolioContainerID').removeClass('d-none');
+        $('#portfolioCardsContainerID').removeClass('d-none');
+
+        $('#aboutMeContainerID').addClass('d-none');
+        $('#technicalSkillsContainerID').addClass('d-none');
+        $('#verticalPillContainerID').addClass('d-none');
+
+    }
 
 
-// Grab element and set 5s delay between fadeout followed by adding d-none class after .1s delay
-$('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 ).addClass( d-none );
-
-$('#socialMediaBarID').delay( 4000 );
-$('#navBarID').delay( 4000 );
 
 
 
