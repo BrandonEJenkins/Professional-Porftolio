@@ -18,15 +18,35 @@ a {
     color: #efbb35;
     text-decoration: none;
     background-color: transparent;
+
+    transition: all .2s ease-in-out;
 }
+
+.noUnderline {
+    text-decoration: none !important;
+}
+
+.noUnderline:hover {
+    color: #1C91A0;
+}
+
+a:link {  };
+
+a:visited { };
 
 a:hover {
     color: #333;
+
+    transform: scale(1.1);
 }
 
 .verticalPillBtn {
     font-size: 20px;
     font-family: 'Andale Mono', monospace;
+}
+
+.verticalPillBtn:hover {
+    color: #1C91A0;
 }
 
 .monospace {
@@ -108,6 +128,10 @@ a:hover {
     margin-bottom: 9rem !important;
 }
 
+#technicalSkillsContainerID {
+    margin-bottom: 9rem !important;
+}
+
 /* .spacerButton {
     margin: 40px 80px;
 } */
@@ -159,13 +183,20 @@ PORTFOLIO CARDS
     transform: scale(1.2);
     transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
+
+    z-index: 5;
+}
+
+.badge, .badge-info {
+    color: #efbb35;
+    background-color: transparent;
+    border: 2px solid #efbb35;
 }
 
 /* Create container to hold portfolio cards */
 .imgContainer {
     width: 50px;
     height: 60px;
-
 }
 
 /* Resize images */
