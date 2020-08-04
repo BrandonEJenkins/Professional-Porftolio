@@ -42,21 +42,21 @@
     </div>
 
     <nav id="navBarID" class="animate__animated animate__fadeIn animate__delay-5s navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Brandon Jenkins</a>
+        <a class="navbar-brand" href="./index.html">Brandon Jenkins</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                <a id="#viewProjectsBtnID" class="nav-item nav-link" href="#">Portfolio</a>
                 <a class="nav-item nav-link" href="#">Contact</a>
                 <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </div>
         </div>
     </nav>
 
-    <a name="topAnchor"></a><!-- anchor tag returning user to top of document -->
+    <a name="topOfPage"></a><!-- anchor tag returning user to top of document -->
 
     <div id="aboutMeContainerID" class="container mt-4 p-5 bg-white aboutMeContainer">
         <div class="row">
@@ -70,7 +70,7 @@
         </div><!-- row -->
         <div id="aboutMeBtnID" class="row mx-3 mt-3 mb-1 p-5 bg-white">
                 <div class="col-sm-6">
-                    <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">View Projects</button>
+                    <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">View Projects</button>
                 </div>
                 <div class="col-sm-6">
                     <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Contact Me</button>
@@ -86,16 +86,22 @@
                 <div class="spacer">
                     <h1 id="techSkillsHeadingID" class="animate__animated animate__fadeInUp animate__delay-5s display-3 mb-5">Technical Skills.</h1>
                     <h3 class="animate__animated animate__fadeInUp animate__delay-5s mb-5">Professional Summary</h3>
-                    <p class="animate__animated animate__fadeInUp animate__delay-5s mb-3 profSumm1">Dedicated professional looking to grow and create innovative solutions with a dynamic company in the Tech sector!</p>
+                    <p class="animate__animated animate__fadeInUp animate__delay-5s mb-3 profSumm1">Dedicated professional looking to grow technically and create innovative solutions with a dynamic company in the Tech sector!</p>
                     <p class="animate__animated animate__fadeInUp animate__delay-5s profSumm1">Skilled at business development &amp; coordination of large capital projects.  Proficient at management of highly technical programs involving multifunctional teams.  Adept in equipment design / selection and advanced performance data analytics.</p>
                     <p class="animate__animated animate__fadeInUp animate__delay-5s profSumm1">I am looking forward to continuing my journey as a creator of value-added solutions in the Technology industry!</p>
                 </div>
             </div>
         </div><!-- row1 -->
-        <div id="workExperienceBtn" class="row mx-3 mt-3 mb-3 p-5 bg-white">
-                <div class="col">
-                    <button  id="technicalSkillsBtnID" type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Work Experience</button>
-                </div>
+        <div class="row">
+            <div id="workExperienceBtn" class="row mx-3 mt-3 p-5 bg-white">
+                    <div class="col">
+                        <button  id="technicalSkillsBtnID" type="button" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s mx-3">Work Experience</button>
+                    </div>
+            </div>
+        </div>
+            <a href="#topOfPage"><i id="topOfPageIconBtnID" class="mx-4 mt-1 mb-3 pl-5 fa fa-angle-double-up fa-3x animate__animated animate__fadeInUp animate__delay-5s" aria-hidden="true"></i></a>
+        <div class="row">
+
         </div>
     </div><!-- #TechnicalSkillsContainer -->
 
@@ -162,14 +168,14 @@
 
             </div><!-- row -->
 
-            <div id="verticalPillViewProjContactMeBtns" class="row mx-3 mt-3 mb-3 p-5 bg-white">
+            <div id="verticalPillViewProjContactMeBtns" class="row mx-3 mt-3 mb-1 pl-0 bg-white">
                 <div class="col-sm-6">
-                    <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl d-flex justify-content start monospace siteBtn animate__animated animate__fadeInUp animate__delay-3s">View Projects</button>
+                    <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-1s">View Projects</button>
                 </div>
                 <div class="col-sm-6">
-                    <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-3s">Contact Me</button>
+                    <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-1s">Contact Me</button>
                 </div>
-            </div><!-- row -->
+            </div><!-- row --> 
 
         </div><!-- .verticalPillNav -->
     </div><!-- .container -->
@@ -186,7 +192,7 @@
     </div><!-- container -->
 
 
-    <div id="portfolioCardsContainerID" class="container animate__animated animate__fadeInUp animate__delay-1s d-none">
+    <div id="portfolioCardsContainerID" class="container animate__animated animate__fadeInUp d-none">
         <div class="row justify-content-center">
             <!-- INSERT DIV WITH CLASS .SPACER??? -->
 
@@ -307,11 +313,10 @@
             <!-- CLOSE DIV WITH CLASS .SPACER??? -->
         </div><!-- row -->
         <br/><br/>
-        <a href="#topAnchor"><i id="homeIconBtnID" class="fa fa-home fa-2x" aria-hidden="true"></i></a>
-        <a href="#topAnchor"><i id="homeIconBtnID" class="fa fa-home fa-2x" aria-hidden="true"></i></a>
 
     </div><!-- container -->
 
+    <a href="#topAnchor"><i id="homeIconBtnID" class="fa fa-home fa-2x d-none" aria-hidden="true"></i></a>
 
     <br/>
     <br/>

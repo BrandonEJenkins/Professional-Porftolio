@@ -1,6 +1,10 @@
 $(document).ready(function () {
 
-    var workExperienceBtn;
+    // var resetScrollBar = document.getElementById('aboutMeContainerID');
+    // resetScrollBar.innerHTML = variableLongText;
+    // resetScrollBar.scrollTop = 0;
+
+    // var workExperienceBtn;
     // Grab element and set 5s delay between fadeout followed by adding d-none class after .1s delay
     $('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 );
     // $('#openingPageDivID').delay( 4000 ).fadeOut( 1000 ).delay( 100 ).addClass( 'd-none' );
@@ -8,8 +12,8 @@ $(document).ready(function () {
     $('#socialMediaBarID').delay( 4000 );
     $('#navBarID').delay( 4000 );
 
-    $(document).on("click","button#technicalSkillsBtnID", handleWorkExperienceBtnClick);
-    $(document).on("click","button#viewProjectsBtnID", handleViewProjectsBtnClick);
+    $(document).on("click","button#technicalSkillsBtnID", handleWorkExperienceBtnClick); // Append home icon
+    $(document).on("click","button#viewProjectsBtnID", handleViewProjectsBtnClick); // Append home icon
     $(document).on("click","button#homeIconBtnID", handleHomeIconBtnClick);
 
     function handleHomeIconBtnClick(e) {
@@ -26,7 +30,15 @@ $(document).ready(function () {
 
         $('#workExperienceBtn').addClass('d-none');
         $('.profSumm1').addClass('d-none');
+        $('#topOfPageIconBtnID').addClass('d-none');
+
         $('#verticalPillContainerID').removeClass('d-none');
+
+        $('#homeIconBtnID').appendTo('#verticalPillContainerID');
+
+        // Go to position on page
+        $('html, body').animate({ scrollTop: $('#v-pills-webDeveloper').offset().bottom}, 2000);
+
     }
 
 })
