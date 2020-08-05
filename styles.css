@@ -155,6 +155,14 @@ a:hover {
     margin: 40px 80px;
 }
 
+.formSpacer {
+    margin: 10px 80px;
+}
+
+.resumeSpacer {
+    margin: 10px 80px;
+}
+
 #openingPageDivID {
     margin-top: 6rem !important;
 }
@@ -262,6 +270,42 @@ PORTFOLIO CARDS
     transition: 0.4s;
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+}
+
+/*****************************************
+* CONTACT FORM STYLES
+ *************************/
+
+input {
+    font-family: monospace;
+    font-size: 24px;
+    border: 0;
+    
+    border-bottom: 2px solid #C1C1C1;
+    outline: none;
+}
+
+input[type="text"] {
+    color: #C1C1C1;
+}
+
+#contactMeFormTitleID {
+    max-height: 200px;
+    margin-bottom: 0px !important;
+}
+
+#contactFormSendBtnID {
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+    min-width: 150px;
+
+    /* horiz offset, vert offset, blur, spread, color */
+    box-shadow: 5px 5px 3px 1px #888;
+}
+
+#contactFormSendBtnID:active {
+    box-shadow: inset 0px 0px 5px #c1c1c1;
 }
 
 /* .fa-square {

@@ -13,8 +13,27 @@ $(document).ready(function () {
     $('#navBarID').delay( 4000 );
 
     $(document).on("click","button#technicalSkillsBtnID", handleWorkExperienceBtnClick); // Append home icon
-    $(document).on("click","button#viewProjectsBtnID", handleViewProjectsBtnClick); // Append home icon
-    $(document).on("click","button#homeIconBtnID", handleHomeIconBtnClick);
+    $(document).on("click","#viewProjectsBtnID", handleViewProjectsBtnClick); // Append home icon
+    $(document).on("click","#homeIconBtnID", handleHomeIconBtnClick);
+    $(document).on("click","#contactMeBtnID",
+    handleContactMeBtnClick);
+
+
+    function handleContactMeBtnClick(e) {
+        e.preventDefault();
+        console.log('contact me button clicked');
+
+        $('#contactMeContainerID').removeClass('d-none');
+        $('#contactFormSendBtnID').removeClass('d-none');
+
+        $('#portfolioCardsContainerID').addClass('d-none');
+        $('#portfolioContainerID').addClass('d-none');
+        $('#verticalPillContainerID').addClass('d-none');
+        $('#technicalSkillsContainerID').addClass('d-none');
+        $('#aboutMeContainerID').addClass('d-none');
+
+    }
+
 
     function handleHomeIconBtnClick(e) {
         e.preventDefault();
@@ -27,17 +46,22 @@ $(document).ready(function () {
     function handleWorkExperienceBtnClick(e) {
         e.preventDefault();
         console.log('work experience button clicked')
+        
+        $('#verticalPillContainerID').removeClass('d-none');
+
+        // $('#technicalSkillsContainerID').addClass('animate__animated animate_fadeIn');
+        // $('#technicalSkillsContainerID').addClass('d-none');
+        // $('#technicalSkillsContainerID').removeClass('d-none');
 
         $('#workExperienceBtn').addClass('d-none');
         $('.profSumm1').addClass('d-none');
         $('#topOfPageIconBtnID').addClass('d-none');
-
-        $('#verticalPillContainerID').removeClass('d-none');
+        $('#aboutMeContainerID').addClass('d-none');
 
         $('#homeIconBtnID').appendTo('#verticalPillContainerID');
 
         // Go to position on page
-        $('html, body').animate({ scrollTop: $('#v-pills-webDeveloper').offset().bottom}, 2000);
+        // $('html, body').animate({ scrollTop: $('#v-pills-webDeveloper').offset().bottom}, 500);
 
     }
 
@@ -54,6 +78,11 @@ $(document).ready(function () {
         $('#technicalSkillsContainerID').addClass('d-none');
         $('#verticalPillContainerID').addClass('d-none');
         $('#homeIconBtnID').addClass('d-none');
+
+        $('#contactMeContainerID').addClass('d-none');
+        $('#contactFormSendBtnID').addClass('d-none');
+
+        var $homeIconDiv = $("<>", )
     }
 
 

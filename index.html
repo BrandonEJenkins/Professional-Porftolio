@@ -49,9 +49,10 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                <a id="#viewProjectsBtnID" class="nav-item nav-link" href="#">Portfolio</a>
-                <a class="nav-item nav-link" href="#">Contact</a>
-                <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a id="viewProjectsBtnID" class="nav-item nav-link" href="#">Portfolio</a>
+                <a id="contactMeBtnID" class="nav-item nav-link" href="#">Contact</a>
+                <a id="contactMeBtnID" class="nav-item nav-link" href="#">Resume</a>
+
             </div>
         </div>
     </nav>
@@ -73,7 +74,7 @@
                     <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">View Projects</button>
                 </div>
                 <div class="col-sm-6">
-                    <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Contact Me</button>
+                    <button type="button" id="contactMeBtnID" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-5s">Contact Me</button>
                 </div>
         </div>
     </div><!-- #aboutMeContainer -->
@@ -173,7 +174,7 @@
                     <button type="button" id="viewProjectsBtnID" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-1s">View Projects</button>
                 </div>
                 <div class="col-sm-6">
-                    <button type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-1s">Contact Me</button>
+                    <button id="contactMeBtnID" type="button" class="btn btn-outline-secondary btn-xl monospace siteBtn animate__animated animate__fadeInUp animate__delay-1s">Contact Me</button>
                 </div>
             </div><!-- row --> 
 
@@ -192,7 +193,7 @@
     </div><!-- container -->
 
 
-    <div id="portfolioCardsContainerID" class="container animate__animated animate__fadeInUp d-none">
+    <div id="portfolioCardsContainerID" class="container p-5 animate__animated animate__fadeInUp d-none">
         <div class="row justify-content-center">
             <!-- INSERT DIV WITH CLASS .SPACER??? -->
 
@@ -325,6 +326,55 @@
     <!-- <nav class="navbar bottom navbar-light bg-light animate__animated animate__fadeInUp animate__delay-5s">
         <a class="navbar-brand" href="#">Fixed bottom</a>
     </nav> -->
+
+
+    <div id="contactMeContainerID" class="container d-none">
+
+        <div class="row">
+            <div class="col">
+                <div class="spacer">
+
+                    <h1 id="contactMeFormTitleID" class="animate__animated animate__fadeIn display-4 p-5 text-center">Contact Me.</h1>
+
+                </div><!-- spacer -->
+            </div><!-- col -->
+        </div><!-- row -->
+
+        <div class="row">
+            <div class="col-6">
+                <div class="formSpacer p-5">
+                    <input id="yourNameFormID" class="animate__animated animate__fadeInUp animate__delay-1s" type="text" placeholder="Your Name" name="emailFormName">
+                </div><!-- spacer -->
+            </div><!-- col-6 -->
+
+            <div class="col-6">
+                <div class="formSpacer p-5">
+                    <input id="yourNameFormID" class="animate__animated animate__fadeInUp animate__delay-1s" type="text" placeholder="Your E-mail Address" name="emailFormUserEmailAddress">
+                </div><!-- spacer -->
+            </div><!-- col-6 -->
+
+        </div><!-- row -->
+
+        <div class="row">
+            <div class="col">
+                <div class="formSpacer p-5">
+                    <input type="email" class="animate__animated animate__fadeInUp animate__delay-1s" placeholder="Your Message" name="emailFormMessage">
+                    <br>
+                    <input id="contactFormSendBtnID" class=" animate__animated animate__fadeInUp animate__delay-2s mt-4" type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </div><!-- Contact Me form container -->
+
+    <div class="container d-none">
+        <div class="row">
+            <div class="col">
+                <div class="resumeSpacer d-flex justify-content-center">
+                    <embed src="./assets/Images/BrandonJenkins_One-Page_Gen Resume_05_2020.pdf" type="application/pdf" width="75%" height="400px"/>
+                </div>
+            </div>
+        </div>
+    </div><!-- resumeContainer -->
 
 
     <!-- jQuery minified -->
