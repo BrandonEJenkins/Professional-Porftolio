@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+
+    
+
     // var resetScrollBar = document.getElementById('aboutMeContainerID');
     // resetScrollBar.innerHTML = variableLongText;
     // resetScrollBar.scrollTop = 0;
@@ -15,8 +18,19 @@ $(document).ready(function () {
     $(document).on("click","button#technicalSkillsBtnID", handleWorkExperienceBtnClick); // Append home icon
     $(document).on("click","#viewProjectsBtnID", handleViewProjectsBtnClick); // Append home icon
     $(document).on("click","#homeIconBtnID", handleHomeIconBtnClick);
-    $(document).on("click","#contactMeBtnID",
-    handleContactMeBtnClick);
+    $(document).on("click","#contactMeBtnID", handleContactMeBtnClick);
+    $(document).on("click","#navbarHomeID", handleNavbarHomeBtnClick);
+
+
+    // Need to prevent text animation from being triggered when navbar links clicked
+    // function handleNavbarHomeBtnClick(e) {
+    //     e.preventDefault();
+    //     console.log('navbar home link clicked');
+
+    //     $('#topOfPage')[0].click();
+    //     $('#openingPageDivID').addClass('d-none');
+
+    // }
 
 
     function handleContactMeBtnClick(e) {
