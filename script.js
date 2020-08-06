@@ -19,7 +19,7 @@ $(document).ready(function () {
     $(document).on("click","#viewProjectsBtnID", handleViewProjectsBtnClick); // Append home icon
     $(document).on("click","#homeIconBtnID", handleHomeIconBtnClick);
     $(document).on("click","#contactMeBtnID", handleContactMeBtnClick);
-    $(document).on("click","#navbarHomeID", handleNavbarHomeBtnClick);
+    // $(document).on("click","#navbarHomeID", handleNavbarHomeBtnClick);
 
 
     // Need to prevent text animation from being triggered when navbar links clicked
